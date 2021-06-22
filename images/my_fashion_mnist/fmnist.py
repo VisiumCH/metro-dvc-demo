@@ -44,14 +44,14 @@ class MyFashionMnist(tfds.core.GeneratorBasedBuilder):
             gen_kwargs=dict(
                 num_examples=60_000,
                 data_path=f"{data_path}/train-images-idx3-ubyte",
-                label_path=f"{data_path}/train-labels.idx1-ubyte",
+                label_path=f"{data_path}/train-labels-idx1-ubyte",
             )),
         tfds.core.SplitGenerator(
             name=tfds.Split.TEST,
             gen_kwargs=dict(
                 num_examples=10_000,
-                data_path=f"{data_path}/t10k-images.idx3-ubyte",
-                label_path=f"{data_path}/t10k-labels.idx1-ubyte",
+                data_path=f"{data_path}/t10k-images-idx3-ubyte",
+                label_path=f"{data_path}/t10k-labels-idx1-ubyte",
             )),
     ]
 
