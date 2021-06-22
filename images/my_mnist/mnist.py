@@ -52,28 +52,23 @@ class MyMnist(tfds.core.GeneratorBasedBuilder):
 
 
     # Make use of dvc to get the data instead of dl_manager
-    path = "data"
-    subprocess.call(["dvc", "pull", path])
-    print("#"*30)
-    print(__file__)
-    print(pathlib.Path(__file__).parent.absolute())
+    data_path = pathlib.Path(__file__).parent.absolute() / "data"
     return [
         tfds.core.SplitGenerator(
             name=tfds.Split.TRAIN,
             gen_kwargs=dict(
                 num_examples=60_000,
-                data_path="data/train-images-idx3-ubyte",
-                label_path="data/train-labels.idx1-ubyte",
+                data_path=f"{data_path}/train-images-idx3-ubyte",
+                label_path=f"{data_path}/train-labels.idx1-ubyte",
             )),
         tfds.core.SplitGenerator(
             name=tfds.Split.TEST,
             gen_kwargs=dict(
                 num_examples=10_000,
-                data_path="data/t10k-images.idx3-ubyte",
-                label_path="data/t10k-labels.idx1-ubyte",
+                data_path=f"{data_path}/t10k-images.idx3-ubyte",
+                label_path=f"{data_path}/t10k-labels.idx1-ubyte",
             )),
     ]
-
 
 
   def _generate_examples(self, num_examples, data_path, label_path):
