@@ -30,7 +30,7 @@ class MyFashionMnist(tfds.core.GeneratorBasedBuilder):
           }),
           supervised_keys=("image", "label"),
           # fileFormat="",
-	  metadata=tfds.core.Metadata(author="charles")
+	        # metadata=tfds.core.Metadata(author="charles")
       )
 
   def _split_generators(self, dl_manager: tfds.download.DownloadManager):
