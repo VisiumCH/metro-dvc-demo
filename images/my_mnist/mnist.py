@@ -2,6 +2,7 @@
 
 from dvc.api import get_url
 import dvc
+import pathlib
 import tensorflow_datasets as tfds
 import subprocess
 import tensorflow as tf
@@ -40,6 +41,7 @@ class MyMnist(tfds.core.GeneratorBasedBuilder):
           }),
           supervised_keys=("image", "label"),
           homepage="http://yann.lecun.com/exdb/mnist/",
+          # fileFormat="",
           citation="",
       )
 
@@ -52,7 +54,9 @@ class MyMnist(tfds.core.GeneratorBasedBuilder):
     # Make use of dvc to get the data instead of dl_manager
     path = "data"
     subprocess.call(["dvc", "pull", path])
-
+    print("#"*30)
+    print(__file__)
+    print(pathlib.Path(__file__).parent.absolute())
     return [
         tfds.core.SplitGenerator(
             name=tfds.Split.TRAIN,
