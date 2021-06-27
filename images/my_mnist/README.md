@@ -7,13 +7,15 @@ This dataset is a copy of the famous MNIST dataset.
 
 ## How to use it!
 
-In order to and use this dataset within a already created git + dvc project, run this command at the root of the project.
+You first need to create a git + dvc project (in practise this should be done already for your project). See here for an introduction on how to set-up a new project.
+
+Then you can run the following command at the root of your project.
 
 ```bash
 dvc import git@github.com:VisiumCH/metrohm-dvc-demo.git images/my_mnist
 ```
 
-In your python code you can now use the Dataset this way.
+You can now directly access the latest version of the data in python.
 
 ```python
 import my_mnist
