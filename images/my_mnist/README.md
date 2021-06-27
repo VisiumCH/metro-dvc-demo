@@ -5,7 +5,7 @@
 This dataset is a copy of the famous MNIST dataset.
 
 
-## How to use it!
+## How to use it
 
 You first need to create a git + dvc project (in practise this should be done already for your project). See [here](https://github.com/VisiumCH/metrohm-dvc-demo) for an introduction on how to set-up a new project.
 
