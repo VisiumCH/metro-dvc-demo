@@ -7,7 +7,8 @@ This dataset is a copy of the famous MNIST dataset.
 
 ## How to use it!
 
-You first need to create a git + dvc project (in practise this should be done already for your project). See here for an introduction on how to set-up a new project.
+You first need to create a git + dvc project (in practise this should be done already for your project). See [here](https://github.com/VisiumCH/metrohm-dvc-demo) for an introduction on how to set-up a new project.
+
 
 Then you can run the following command at the root of your project.
 
@@ -31,3 +32,8 @@ import tensorflow_datasets as tfds
 
 print(ds_info)
 ```
+
+## Data Maintenance
+In case of questions about the data, please refer to the data responsible.
+
+Data Responsible: Charles Gallay, cg@visium.ch
