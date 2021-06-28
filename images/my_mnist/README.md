@@ -5,15 +5,18 @@
 This dataset is a copy of the famous MNIST dataset.
 
 
-## How to use it!
+## How to use it
 
-In order to and use this dataset within a already created git + dvc project, run this command at the root of the project.
+You first need to create a git + dvc project (in practise this should be done already for your project). See [here](https://github.com/VisiumCH/metrohm-dvc-demo) for an introduction on how to set-up a new project.
+
+
+Then you can run the following command at the root of your project.
 
 ```bash
 dvc import git@github.com:VisiumCH/metrohm-dvc-demo.git images/my_mnist
 ```
-
-In your python code you can now use the Dataset this way.
+### Accessing the data using Python
+You can now directly access the latest version of the data in python.
 
 ```python
 import my_mnist
@@ -29,3 +32,14 @@ import tensorflow_datasets as tfds
 
 print(ds_info)
 ```
+
+### Accessing the data using the DVC CLI
+You can download the latest version of the data directly by using the DVC CLI.
+```bash
+dvc pull
+```
+
+## Data Maintenance
+In case of questions about the data, please refer to the data responsible.
+
+Data Responsible: Charles Gallay, cg@visium.ch
