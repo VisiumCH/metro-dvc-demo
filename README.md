@@ -13,3 +13,5 @@ One dataset repo composed of multiple git submodule where each submodule is a da
 
 
 Each time one would like to use a dataset within a project one would simply add the corresponding git submodule as a dependency. The command `dvc run` would download and augment the data (basically generate the tfrecords). The output of the last step could be cached on a bucket as well for sharing and speed up the processing.
+
+   - Using cookiecutter for introducing new dataset.
