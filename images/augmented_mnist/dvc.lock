@@ -16,7 +16,7 @@ stages:
       size: 55440512
       nfiles: 4
   build-dataset:
-    cmd: tfds build .
+    cmd: tfds build --data_dir data/tensorflow_datasets .
     deps:
     - path: augmented_mnist.py
       md5: bb3c99f0cd056ba7af2b5744fa620de0
@@ -24,4 +24,9 @@ stages:
     - path: data/augmented
       md5: 49f97d2a3f105c77597885a6c54918c6.dir
       size: 55440512
+      nfiles: 4
+    outs:
+    - path: data/tensorflow_datasets
+      md5: e3253e6024c20f6fbc9204835bce4509.dir
+      size: 24503236
       nfiles: 4
