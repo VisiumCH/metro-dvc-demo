@@ -4,7 +4,7 @@ This repository is meant to serve as a demo of a potential Data Repository for M
 
 The data repository not only allows to browse data sets, it also provides:
 - Meta information about data sets;
-- ata loader to allow a standardized way to deal with data (even though the raw files may have differen formats);
+- data loader to allow a standardized way to deal with data (even though the raw files may have differen formats);
 - DVC projects to keep track of all versions of a dataset;
 - a way to manage ownership of a dataset as well as an approval process to change datasets (via PR).
 
