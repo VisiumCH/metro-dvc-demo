@@ -14,7 +14,7 @@ You first need to create a git + dvc project (in practise this should be done al
 Then you can run the following command at the root of your project.
 
 ```bash
-dvc import --rev new_dataset git@github.com:VisiumCH/metrohm-dvc-demo.git images/augmented_mnist
+dvc import git@github.com:VisiumCH/metrohm-dvc-demo.git images/augmented_mnist
 ```
 ### Accessing the data using Python
 You can now directly access the latest version of the data in python.
