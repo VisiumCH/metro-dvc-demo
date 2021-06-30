@@ -22,9 +22,9 @@ You can now directly access the latest version of the data in python.
 ```python
 import tensorflow_datasets as tfds
 
-(ds_train, ds_test), ds_info = tfds.load(
+ds_train, ds_info = tfds.load(
     "octane",
-    split=["train", "test"],
+    split="train",
     shuffle_files=True,
     as_supervised=True,
     with_info=True,
