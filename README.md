@@ -10,7 +10,6 @@ The data repository not only allows to browse data sets, it also provides:
 
 ## Available Datasets
 ```
-
 ├── Chromatograms
 │   └── Octane                            
 │
@@ -22,13 +21,14 @@ The data repository not only allows to browse data sets, it also provides:
     └── augmented_mnist                          
 ```
 
-
+Information concerning how to access a specific dataset can be found in the corresponding folder in the data repository.
 
 # DVC Data Lake documentation
-The purpose of this file is to provide documentation on how to use data lake implementation with DVC .
+The purpose of this file is to provide documentation on how to use data lake implementation with DVC.
 
 ## Working with DVC
 DVC is greatly documented on their own [website](https://dvc.org/doc/start). For the general workflows with DVC we refere there.
+
 
 ## How to authenticate
 For the purpose of this demo and simplicity, Google Cloud bucket has been chosen for the storage of the raw datas. This means that in order to play with the demo, one will need to have or create a Google account and install the google cloud command line tool `gcloud`.
