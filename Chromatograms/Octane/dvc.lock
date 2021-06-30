@@ -1,0 +1,17 @@
+schema: '2.0'
+stages:
+  build-dataset:
+    cmd: tfds build Octane --data_dir data/tensorflow_datasets
+    deps:
+    - path: Octane.py
+      md5: 90f77d8f2b38053f61b0572be9389887
+      size: 2342
+    - path: data/raw
+      md5: 5612c0829c5ed8ae94ecf6b3470113f4.dir
+      size: 72796
+      nfiles: 1
+    outs:
+    - path: data/tensorflow_datasets
+      md5: 8b0aef09397c451813d813d64e1e8a9e.dir
+      size: 38362
+      nfiles: 3

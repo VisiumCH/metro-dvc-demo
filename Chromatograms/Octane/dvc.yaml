@@ -1,0 +1,11 @@
+stages:
+  build-dataset:
+    cmd: tfds build Octane --data_dir data/tensorflow_datasets
+
+    deps:
+      - data/raw
+      - Octane.py
+    
+    outs:
+      - data/tensorflow_datasets
+
