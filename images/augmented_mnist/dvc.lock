@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  augment:
+    cmd: python3 steps/augment.py --input data/raw --output data/augmented
+    deps:
+    - path: data/raw
+      md5: 457c2871d2e5875441973b32453345c9.dir
+      size: 54950048
+      nfiles: 4
+    - path: steps/augment.py
+      md5: 79e7652c4886e054c76386f17be6bb67
+      size: 1796
+    outs:
+    - path: data/augmented
+      md5: 49f97d2a3f105c77597885a6c54918c6.dir
+      size: 55440512
+      nfiles: 4
+  build-dataset:
+    cmd: tfds build .
+    deps:
+    - path: augmented_mnist.py
+      md5: bb3c99f0cd056ba7af2b5744fa620de0
+      size: 3126
+    - path: data/augmented
+      md5: 49f97d2a3f105c77597885a6c54918c6.dir
+      size: 55440512
+      nfiles: 4
