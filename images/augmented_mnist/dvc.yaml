@@ -1,0 +1,20 @@
+stages:
+  augment:
+    cmd: python3 steps/augment.py --input data/raw --output data/augmented 
+
+    deps:
+      - data/raw
+      - steps/augment.py
+
+    outs:
+      - data/augmented
+  
+  build-dataset:
+    cmd: tfds build --data_dir data/tensorflow_datasets .
+
+    outs:
+      - data/tensorflow_datasets
+
+    deps:
+      - data/augmented
+      - augmented_mnist.py
