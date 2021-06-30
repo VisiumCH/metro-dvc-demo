@@ -1,6 +1,6 @@
 [core]
     remote = gs-data
 ['remote "gs-data"']
-    url = gs://demo-dvc-registry
-['remote "gs-data-heri"']
-    url = gs://demo-dvc-registry-heri
+    url = gs://demo-dvc-registry/datasets
+['remote "herisau-gs-data"']
+    url = gs://demo-dvc-registry/herisau-datasets
