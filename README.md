@@ -1,6 +1,6 @@
 
-# Metrohm Data Repository
-This repository is meant to serve as a demo of a potential Data Repository for Metrohm. It contains meta-information about datasets, as well as DVC projects whith which access to the actual data is granted. The data itself is on a Google Cloud Storage managed by Visium. The specific user access is managed on Cloud Storage level.
+# The Data Repository
+This repository is meant to serve as a demo of a potential Data Repository. It contains meta-information about datasets, as well as DVC projects whith which access to the actual data is granted. The data itself is on a Google Cloud Storage managed by Visium. The specific user access is managed on Cloud Storage level.
 
 The data repository not only allows to browse data sets, it also provides:
 - Meta information about data sets;
