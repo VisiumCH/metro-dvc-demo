@@ -70,7 +70,7 @@ In order to add a dataset into the main repository, it’s important to follow a
       - dvc add data/; dvc push -r remote-bucket;
       - WARNING: When pushing data to a bucket, make sure that you are pushing the data on a bucket where only authorized people are allowed to access it. Hint: list the remotes available in the project with `dvc remote list` 
 
-Please have a look at the [demo repository](https://github.com/VisiumCH/metrohm-dvc-demo/tree/master/images/my_mnist) for a concrete example.
+Please have a look at the [demo repository](https://github.com/VisiumCH/metro-dvc-demo/tree/master/images/my_mnist) for a concrete example.
 
 When working with a centralized repository shared by multiple people, it’s important to follow good practice. Therefore when adding a new dataset, one should first create a PR on the dataset repository and obtain the approval before the PR is merged.
 

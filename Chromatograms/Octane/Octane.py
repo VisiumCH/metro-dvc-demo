@@ -44,7 +44,7 @@ class Octane(tfds.core.GeneratorBasedBuilder):
   def _split_generators(self, dl_manager: tfds.download.DownloadManager):
     """Returns SplitGenerators."""
     # TODO(mnist): Downloads the data and defines the splits
-    # data_url = get_url("images/mnist/data", repo="https://github.com/VisiumCH/metrohm-dvc-demo")
+    # data_url = get_url("images/mnist/data", repo="https://github.com/VisiumCH/metro-dvc-demo")
 
     # Make use of dvc to get the data instead of dl_manager
     data_path = pathlib.Path(__file__).parent.absolute() / "data/raw"
