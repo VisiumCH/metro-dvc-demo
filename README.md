@@ -92,5 +92,5 @@ TBD
 ## Python requirements
 ```
 dvc[gs]
-Tensorflow_datasets
+tensorflow_datasets
 ```
