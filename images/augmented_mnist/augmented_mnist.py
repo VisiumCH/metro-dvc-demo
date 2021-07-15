@@ -38,7 +38,7 @@ class MyAugmentedMnist(tfds.core.GeneratorBasedBuilder):
           }),
           supervised_keys=("image", "label"),
           homepage="http://yann.lecun.com/exdb/mnist/",
-          fileFormat="",
+          # fileFormat="",
           citation="",
       )
 
